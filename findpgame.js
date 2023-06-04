@@ -1,20 +1,19 @@
-let findPGameRoot = document.getElementsByClassName('find-p-game')[0];
-let findPGameCards = document.getElementsByClassName('find-p-game__card');
+const findPGameRoot = document.querySelector('.find-p-game');
 
-let findPGameGridSizeFromAttr = parseInt(findPGameRoot.getAttribute('data-findpgame-col'));
-let findPGameCardFinalTextFromAttr = findPGameRoot.getAttribute('data-win-text');
-let findPGameCardCoverStyleFromAttr = findPGameRoot.getAttribute('data-findpgame-cover');
-let findPGameCardRestartBtnTextFromAttr = findPGameRoot.getAttribute('data-restart-btn');
+const findPGameGridSizeFromAttr = parseInt(findPGameRoot.getAttribute('data-findpgame-col'));
+const findPGameCardFinalTextFromAttr = findPGameRoot.getAttribute('data-win-text');
+const findPGameCardCoverStyleFromAttr = findPGameRoot.getAttribute('data-findpgame-cover');
+const findPGameCardRestartBtnTextFromAttr = findPGameRoot.getAttribute('data-restart-btn');
 
 let findPGameImgsArray = [];
 let findPGameCardBackArrayOfKeys = [];
 
 let strForGridStyle = '';
 let howManyCardsAreOpen = 0;
-let findPGameGridSizeDefault = 4;
-let findPGameCardFinalTextDefault = 'You win!';
-let findPGameCardRestartBtnTextDefault = 'Restart';
-let findPGameArrayOfColorsOfCardsWithoutImg = ['#FDFF99', '#21EA00', '#FF0000', '#FF6AE7', '#00FFD1', '#FFA800', '#FAFF00', '#093E00', '#6BFFE4', '#FF3D00', '#FF00A8', '#706DFF', '#FF8585', '#6EC500', '#FFA5E0', '#003E3A', '#5F0000'];
+const findPGameGridSizeDefault = 4;
+const findPGameCardFinalTextDefault = 'You win!';
+const findPGameCardRestartBtnTextDefault = 'Restart';
+const findPGameArrayOfColorsOfCardsWithoutImg = ['#FDFF99', '#21EA00', '#FF0000', '#FF6AE7', '#00FFD1', '#FFA800', '#FAFF00', '#093E00', '#6BFFE4', '#FF3D00', '#FF00A8', '#706DFF', '#FF8585', '#6EC500', '#FFA5E0', '#003E3A', '#5F0000'];
 let findPGameArrayOfColorsOfCardsWithoutImgIndex = 0;
 
 let findPGameGridSize;
@@ -138,6 +137,12 @@ const createGame = () => {
         findPGameCard.appendChild(findPGameCardImg);
         findPGameCardGrid.appendChild(findPGameCard);
 
+        /*addEventListener*/
+
+        findPGameCard.addEventListener('click', function () {
+            openPGameCard(findPGameCard);
+        });
+
         findPGameCardBackArrayOfKeys.push(findPGameImgsArray[i][1].toString());
     }
 
@@ -177,12 +182,6 @@ const createGame = () => {
             firstSelectedCardElem = elem;
             howManyCardsAreOpen = 1;
         }
-    }
-
-    for (let i = 0; i < findPGameCards.length; i++) {
-        findPGameCards[i].addEventListener('click', function () {
-            openPGameCard(this);
-        });
     }
 }
 
