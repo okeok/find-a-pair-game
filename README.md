@@ -10,18 +10,16 @@
 </ol>
 
 <div>It will be somethihg like:</div>
-<code>
-    &lt;div class="find-p-game" data-findpgame-col="4" data-win-text="You win!" data-restart-btn="Restart"
-        data-findpgame-cover="img/cover.svg"&gt;<br>
-        &lt;img src="img/1.svg"&gt;<br>
-        &lt;img src="img/2.svg"&gt;<br>
-        &lt;img src="img/3.svg"&gt;<br>
-        &lt;img src="img/4.svg"&gt;<br>
-        &lt;img src="img/5.svg"&gt;<br>
-        &lt;img src="img/6.svg"&gt;<br>
-        &lt;img src="img/7.svg"&gt;<br><br>
-        &lt;img src="img/8.svg"&gt;<br>
-    &lt;/div&gt;<br>
+<code>&lt;div class="find-p-game" data-findpgame-col="4" data-win-text="You win!" data-restart-btn="Restart" data-findpgame-cover="img/cover.svg"&gt;<br>
+    &lt;img src="img/1.svg"&gt;<br>
+    &lt;img src="img/2.svg"&gt;<br>
+    &lt;img src="img/3.svg"&gt;<br>
+    &lt;img src="img/4.svg"&gt;<br>
+    &lt;img src="img/5.svg"&gt;<br>
+    &lt;img src="img/6.svg"&gt;<br>
+    &lt;img src="img/7.svg"&gt;<br>
+    &lt;img src="img/8.svg"&gt;<br>
+&lt;/div&gt;<br>
 </code>
 
 <h2>Options</h2>
