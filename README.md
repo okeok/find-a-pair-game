@@ -9,6 +9,21 @@
 <li>To "div" with class "find-p-game" add tags "img" with images, that you need for game (it will be cards in game)</li>
 </ol>
 
+<div>It will be somethihg like:</div>
+<code>
+    &lt;div class="find-p-game" data-findpgame-col="4" data-win-text="You win!" data-restart-btn="Restart"
+        data-findpgame-cover="img/cover.svg"&gt;<br>
+        &lt;img src="img/1.svg"&gt;<br>
+        &lt;img src="img/2.svg"&gt;<br>
+        &lt;img src="img/3.svg"&gt;<br>
+        &lt;img src="img/4.svg"&gt;<br>
+        &lt;img src="img/5.svg"&gt;<br>
+        &lt;img src="img/6.svg"&gt;<br>
+        &lt;img src="img/7.svg"&gt;<br><br>
+        &lt;img src="img/8.svg"&gt;<br>
+    &lt;/div&gt;<br>
+</code>
+
 <h2>Options</h2>
 There are four parameters for setting your game. They all are attributes for "div" block with class "find-p-game".
 <ol>
@@ -20,3 +35,6 @@ There are four parameters for setting your game. They all are attributes for "di
 <li><b>data-restart-btn</b> &mdash; text for restart button on win screen. Default value "Restart"</li>
 <li><b>data-findpgame-cover</b> &mdash; path for custom card cover. If it's empty, card cover will have background with #FFC061 color</li>
 </ol>
+
+<h2>Try it!</h2>
+<a href="https://okeok.github.io/projects/find-a-pair-game/"></a>
