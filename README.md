@@ -34,4 +34,4 @@ There are four parameters for setting your game. They all are attributes for "di
 <li><b>data-findpgame-cover</b> &mdash; path for custom card cover. If it's empty, card cover will have background with #FFC061 color</li>
 </ol>
 
-<a href="https://okeok.github.io/projects/find-a-pair-game/">Try it!</a>
+<a href="https://okeok.github.io/projects/find-a-pair-game/"><b>Try it!</b></a>
